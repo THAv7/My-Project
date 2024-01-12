@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300&family=Hanuman:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@300&family=Updock&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300&family=Hanuman:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@300&family=Updock&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/Pizza.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Page: Crispy Thin Pizza</title>
+</head>
+<body>
+    <!-- Hearder -->
+    <section class="sec-menu">
+        <div class="container-fluid shadow">
+            <div class="nav-bar">
+                <div class="logo-pizza">
+                    <img src="../Pizza_Img/logo-pizza.svg" alt="#" title="Logo">
+                </div>
+                <div class="btn-service">
+                    <h6 class="active">Delivery <span><i class="bi bi-check text-white"></i></span></h6>
+                    <h6>Pick Up <span><i class="bi bi-check text-white"></i></span></h6>
+                </div>
+                <div class="input-address">                  
+                    <input name="input-add" type="text" placeholder="Select Store" readonly>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="language-btn">
+                    <select name="choose-lg">
+                        <option value="Khmer">Khmer</option>
+                        <option value="English">English</option>
+                    </select>
+                    <span class="btn-click">
+                        <a href="../Project/formLogin.html"><button class="btn btn-warning">Login</button></a>
+                        <a href="../Project/formRegister.html"><button class="btn btn-success">Register</button></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Body -->
+    <section>
+        <div class="popup">
+            <div class="row">
+                <div class="col-12 p-4">
+                    <h2 align="center">Login Account</h2><br><br>
+                    <form name="login">
+                        <div class="user-name">
+                            <label>Username</label>
+                            <input class="form form-control" type="text" name="username" id="name" placeholder="Username">
+                        </div><br>
+                        <div class="passwd">
+                            <label>Password</label>
+                            <input class="form form-control" type="password" name="password" id="pwd" placeholder="Password">
+                        </div><br>
+                        <div class="phone">
+                            <label>Phone number</label>
+                            <input class="form form-control" type="number" name="phone-number" id="num" placeholder="Phone Number">
+                        </div><br>
+                        <div class="btn-form">
+                            <button class="btn btn-secondary"><a href="#">Cancel</a></button>
+                            <button class="btn btn-success"><a href="#">Submit</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="dark-popup">
+
+        </div>
+        <div class="container">
+            <b><h2>Menu</h2></b>
+            <div class="images-menu w-100 menu-bar d-flex">
+                <div class="menu-img">
+                    <a href="../projects.html">
+                        <img class="active-item" src="../Pizza_Img/pizza-v1.webp" alt="">
+                        <h4>Pizza</h4>
+                    </a>
+                </div>
+                <div class="menu-img">
+                    <a href="../Project/pizzaOfTheMonth.html">
+                        <img src="../Pizza_Img/pizza-v2.jpg" alt="">
+                        <h4>Pizza of the month</h4>
+                    </a>
+                </div>
+                <div class="menu-img">
+                    <a href="#">
+                        <img src="../Pizza_Img/pizza-v3.jpg" alt="">
+                        <h4>Chessy Puff and Square Pizza</h4>
+                    </a>
+                </div>
+                <div class="menu-img">
+                    <a href="../Project/value_set.html">
+                        <img src="../Pizza_Img/pizza-v4.webp" alt="">
+                        <h4>Create Value Set</h4>
+                    </a>
+                </div>
+                <div class="menu-img">
+                    <a href="../Project/appetizer.html">
+                        <img src="../Pizza_Img/pizza-v5.webp" alt="">
+                        <h4>Appetizers</h4>
+                    </a>
+                </div>
+                <div class="menu-img">
+                    <a href="../Project/chicken.html">
+                        <img src="../Pizza_Img/pizza-v6.webp" alt="">
+                        <h4>Chicken</h4>
+                    </a>
+                </div>
+                <div class="menu-img">
+                    <a href="../Project/pasta.html">
+                        <img src="../Pizza_Img/pizza-v7.webp" alt="">
+                        <h4>Pasta</h4>
+                    </a>
+                </div>
+                <div class="menu-img">
+                    <a href="../Project/salad_steak.html">
+                        <img src="../Pizza_Img/pizza-v8.webp" alt="">
+                        <h4>Salad and Steak</h4>
+                    </a>
+                </div>
+                <div class="menu-img">
+                    <a href="../Project/desserts.html">
+                        <img src="../Pizza_Img/pizza-v9.webp" alt="">
+                        <h4>Drink and Disserts</h4>
+                    </a>
+                </div>
+            </div>
+            <!--Menu list-->
+            <div class="menu-list">
+                <h2 align="center" class="m-4">PIZZA</h2>
+                <header class="list">
+                    <ul>
+                        <li><a href="#" class="act"><span>All</span></a></li>
+                        <li><a href="#"><span>Thick and soft pizza dough</span></a></li>
+                        <li><a href="#"><span>Square Pizza</span></a></li>
+                        <li><a href="#"><span>Pan</span></a></li>
+                        <li><a href="#"><span>Chessy Puff</span></a></li>
+                        <li><a href="../Project/cheeseOverload.html"><span>Cheese Over Load</span></a></li>
+                        <li><a href="#"><span>Crispy Thin Pizza</span></a></li>
+                        <li><a href="#"><span>Extreme Edge</span></a></li>
+                        <li><a href="#"><span>New York Pizza Thin & Soft</span></a></li>
+                    </ul>
+                </header>
+            </div>
+            <!--Body-->
+            <div class="main-body">
+                <!--left-->
+                <section class="item-left" data-aos="fade-up" data-aos-eseing="fade-in-out">
+                    <div class="border-box">
+                        <div class="categ">
+                            <div class="img-pizza">
+                                <img src="../Pizza_Img/A1-png.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h4>Seafood Cocktail</h4>
+                                <p>Shirmp, Crab Sticks, Pineapple, Mozzarella Cheese and Thousand Island Sauce</p>
+                                <div class="select-option">
+                                    <span>
+                                        <h6>Select Edge</h6>
+                                        <select name="choose">
+                                            <option value="Crispy Thin">Crispy Thin</option>
+                                            <option value="Extreme Seafood">Extreme Seafood</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <h6>Choose Size</h6>
+                                        <select name="choose">
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="about">
+                                    <div class="texts"><h6><a href="#">Customize Half n'Half</a></h6></div>
+                                    <div class="price"><span><span style="color: rgb(247, 95, 95); font-size: .8rem;">Dis10%</span> 12$</span>  <span><i class="bi bi-plus"></i>Select</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--item 2-->
+                <section class="item-right" data-aos="fade-up" data-aos-eseing="fade-in-out">
+                    <div class="border-box">
+                        <div class="categ">
+                            <div class="img-pizza">
+                                <img src="../Pizza_Img/A2-png.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h4>Hawaiian</h4>
+                                <p>Ham, Bacon, Pineapple, Mozzarella Cheese and Pizza Sauce</p>
+                                <div class="select-option">
+                                    <span>
+                                        <h6>Select Edge</h6>
+                                        <select name="choose">
+                                            <option value="Crispy Thin">Crispy Thin</option>
+                                            <option value="Extreme Seafood">Extreme Seafood</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <h6>Choose Size</h6>
+                                        <select name="choose">
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="about">
+                                    <div class="texts"><h6><a href="#">Customize Half n'Half</a></h6></div>
+                                    <div class="price"><span><span style="color: rgb(247, 95, 95); font-size: .8rem;">Dis10%</span> 12$</span>  <span><i class="bi bi-plus"></i>Select</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Item 3-->
+                <section class="item-left" data-aos="fade-up" data-aos-eseing="fade-in-out">
+                    <div class="border-box">
+                        <div class="categ">
+                            <div class="img-pizza">
+                                <img src="../Pizza_Img/A3-png.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h4>Super Deluxe</h4>
+                                <p>Ham, Bacon, Pepperoni, Smoked Sausage, Italian Sausage and Pizza Sauce</p>
+                                <div class="select-option">
+                                    <span>
+                                        <h6>Select Edge</h6>
+                                        <select name="choose">
+                                            <option value="Crispy Thin">Crispy Thin</option>
+                                            <option value="Extreme Seafood">Extreme Seafood</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <h6>Choose Size</h6>
+                                        <select name="choose">
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="about">
+                                    <div class="texts"><h6><a href="#">Customize Half n'Half</a></h6></div>
+                                    <div class="price"><span><span style="color: rgb(247, 95, 95); font-size: .8rem;">Dis10%</span> 12$</span>  <span><i class="bi bi-plus"></i>Select</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Item 4-->
+                <section class="item-right" data-aos="fade-up" data-aos-eseing="fade-in-out">
+                    <div class="border-box">
+                        <div class="categ">
+                            <div class="img-pizza">
+                                <img src="../Pizza_Img/A4-png.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h4>Spicy Super Seafood</h4>
+                                <p>Squid, Garlic Pepper Shrimp, Red &Green Chilli, Capsicums, Onion, Basil, Mozzarella Chess and Marinara Sauce</p>
+                                <div class="select-option">
+                                    <span>
+                                        <h6>Select Edge</h6>
+                                        <select name="choose">
+                                            <option value="Crispy Thin">Crispy Thin</option>
+                                            <option value="Extreme Seafood">Extreme Seafood</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <h6>Choose Size</h6>
+                                        <select name="choose">
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="about">
+                                    <div class="texts"><h6><a href="#">Customize Half n'Half</a></h6></div>
+                                    <div class="price"><span><span style="color: rgb(247, 95, 95); font-size: .8rem;">Dis10%</span> 12$</span>  <span><i class="bi bi-plus"></i>Select</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Item 5-->
+                <section class="item-left" data-aos="fade-up" data-aos-eseing="fade-in-out">
+                    <div class="border-box">
+                        <div class="categ">
+                            <div class="img-pizza">
+                                <img src="../Pizza_Img/A5-png.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h4>Seafood Deluxe</h4>
+                                <p>Shrimp, Crab Sticks, Onion, Capsicums, Mozzarella Cheese and Marinara Sauce</p>
+                                <div class="select-option">
+                                    <span>
+                                        <h6>Select Edge</h6>
+                                        <select name="choose">
+                                            <option value="Crispy Thin">Crispy Thin</option>
+                                            <option value="Extreme Seafood">Extreme Seafood</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <h6>Choose Size</h6>
+                                        <select name="choose">
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="about">
+                                    <div class="texts"><h6><a href="#">Customize Half n'Half</a></h6></div>
+                                    <div class="price"><span><span style="color: rgb(247, 95, 95); font-size: .8rem;">Dis10%</span> 12$</span>  <span><i class="bi bi-plus"></i>Select</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Item 6-->
+                <section class="item-right" data-aos="fade-up" data-aos-eseing="fade-in-out">
+                    <div class="border-box">
+                        <div class="categ">
+                            <div class="img-pizza">
+                                <img src="../Pizza_Img/A6-png.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h4>Double Cheese</h4>
+                                <p>Extra Mozzarella Cheese and Pizza Sauce</p>
+                                <div class="select-option">
+                                    <span>
+                                        <h6>Select Edge</h6>
+                                        <select name="choose">
+                                            <option value="Crispy Thin">Crispy Thin</option>
+                                            <option value="Extreme Seafood">Extreme Seafood</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <h6>Choose Size</h6>
+                                        <select name="choose">
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="about">
+                                    <div class="texts"><h6><a href="#">Customize Half n'Half</a></h6></div>
+                                    <div class="price"><span><span style="color: rgb(247, 95, 95); font-size: .8rem;">Dis10%</span> 12$</span>  <span><i class="bi bi-plus"></i>Select</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Item 7 -->
+                <section class="item-left" data-aos="fade-up" data-aos-eseing="fade-in-out">
+                    <div class="border-box">
+                        <div class="categ">
+                            <div class="img-pizza">
+                                <img src="../Pizza_Img/A7-png.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h4>Double Pepperoni</h4>
+                                <p>Pepperoni, Mozzarella Cheese and Pizza Sauce</p>
+                                <div class="select-option">
+                                    <span>
+                                        <h6>Select Edge</h6>
+                                        <select name="choose">
+                                            <option value="Crispy Thin">Crispy Thin</option>
+                                            <option value="Extreme Seafood">Extreme Seafood</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <h6>Choose Size</h6>
+                                        <select name="choose">
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="about">
+                                    <div class="texts"><h6><a href="#">Customize Half n'Half</a></h6></div>
+                                    <div class="price"><span><span style="color: rgb(247, 95, 95); font-size: .8rem;">Dis10%</span> 12$</span>  <span><i class="bi bi-plus"></i>Select</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Item 8 -->
+                <section class="item-right" data-aos="fade-up" data-aos-eseing="fade-in-out">
+                    <div class="border-box">
+                        <div class="categ">
+                            <div class="img-pizza">
+                                <img src="../Pizza_Img/A8-png.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h4>Seafood Cocktail</h4>
+                                <p>Shirmp, Crab Sticks, Pineapple, Mozzarella Cheese and Thousand Island Sauce</p>
+                                <div class="select-option">
+                                    <span>
+                                        <h6>Select Edge</h6>
+                                        <select name="choose">
+                                            <option value="Crispy Thin">Crispy Thin</option>
+                                            <option value="Extreme Seafood">Extreme Seafood</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <h6>Choose Size</h6>
+                                        <select name="choose">
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="about">
+                                    <div class="texts"><h6><a href="#">Customize Half n'Half</a></h6></div>
+                                    <div class="price"><span><span style="color: rgb(247, 95, 95); font-size: .8rem;">Dis10%</span> 12$</span>  <span><i class="bi bi-plus"></i>Select</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Item 9 -->
+                <section class="item-left" data-aos="fade-up" data-aos-eseing="fade-in-out">
+                    <div class="border-box">
+                        <div class="categ">
+                            <div class="img-pizza">
+                                <img src="../Pizza_Img/A9-png.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h4>Seafood Cocktail</h4>
+                                <p>Shirmp, Crab Sticks, Pineapple, Mozzarella Cheese and Thousand Island Sauce</p>
+                                <div class="select-option">
+                                    <span>
+                                        <h6>Select Edge</h6>
+                                        <select name="choose">
+                                            <option value="Crispy Thin">Crispy Thin</option>
+                                            <option value="Extreme Seafood">Extreme Seafood</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <h6>Choose Size</h6>
+                                        <select name="choose">
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="about">
+                                    <div class="texts"><h6><a href="#">Customize Half n'Half</a></h6></div>
+                                    <div class="price"><span><span style="color: rgb(247, 95, 95); font-size: .8rem;">Dis10%</span> 12$</span>  <span><i class="bi bi-plus"></i>Select</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Item 10-->
+                <section class="item-right" data-aos="fade-up" data-aos-eseing="fade-in-out">
+                    <div class="border-box">
+                        <div class="categ">
+                            <div class="img-pizza">
+                                <img src="../Pizza_Img/A10-png.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h4>Seafood Cocktail</h4>
+                                <p>Shirmp, Crab Sticks, Pineapple, Mozzarella Cheese and Thousand Island Sauce</p>
+                                <div class="select-option">
+                                    <span>
+                                        <h6>Select Edge</h6>
+                                        <select name="choose">
+                                            <option value="Crispy Thin">Crispy Thin</option>
+                                            <option value="Extreme Seafood">Extreme Seafood</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <h6>Choose Size</h6>
+                                        <select name="choose">
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="about">
+                                    <div class="texts"><h6><a href="#">Customize Half n'Half</a></h6></div>
+                                    <div class="price"><span><span style="color: rgb(247, 95, 95); font-size: .8rem;">Dis10%</span> 12$</span>  <span><i class="bi bi-plus"></i>Select</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Item 11 -->
+                <section class="item-left" data-aos="fade-up" data-aos-eseing="fade-in-out">
+                    <div class="border-box">
+                        <div class="categ">
+                            <div class="img-pizza">
+                                <img src="../Pizza_Img/A11-png.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h4>Ham&Crab Sticks</h4>
+                                <p>Roasted Chicken, Pineapple, Red&Green Chili, Mozzarella Cheese and Thousand Island Sauce</p>
+                                <div class="select-option">
+                                    <span>
+                                        <h6>Select Edge</h6>
+                                        <select name="choose">
+                                            <option value="Crispy Thin">Crispy Thin</option>
+                                            <option value="Extreme Seafood">Extreme Seafood</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <h6>Choose Size</h6>
+                                        <select name="choose">
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="about">
+                                    <div class="texts"><h6><a href="#">Customize Half n'Half</a></h6></div>
+                                    <div class="price"><span><span style="color: rgb(247, 95, 95); font-size: .8rem;">Dis10%</span> 12$</span>  <span><i class="bi bi-plus"></i>Select</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Left-item-12 -->
+                <section class="item-right" data-aos="fade-up" data-aos-eseing="fade-in-out">
+                    <div class="border-box">
+                        <div class="categ">
+                            <div class="img-pizza">
+                                <img src="../Pizza_Img/A12-png.png" alt="">
+                            </div>
+                            <div class="details">
+                                <h4>Seafood Cocktail</h4>
+                                <p>Shirmp, Crab Sticks, Pineapple, Mozzarella Cheese and Thousand Island Sauce</p>
+                                <div class="select-option">
+                                    <span>
+                                        <h6>Select Edge</h6>
+                                        <select name="choose">
+                                            <option value="Crispy Thin">Crispy Thin</option>
+                                            <option value="Extreme Seafood">Extreme Seafood</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <h6>Choose Size</h6>
+                                        <select name="choose">
+                                            <option value="Medium">Medium</option>
+                                            <option value="Large">Large</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="about">
+                                    <div class="texts"><h6><a href="#">Customize Half n'Half</a></h6></div>
+                                    <div class="price"><span><span style="color: rgb(247, 95, 95); font-size: .8rem;">Dis10%</span> 12$</span>  <span><i class="bi bi-plus"></i>Select</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section data-aos-eseing="fade-in-out">
+        <div class="footer p-4">
+            <div class="container">
+                <div class="item-left">
+                    <div class="card-img d-flex">
+                        <img src="../Pizza_Img/VISA-logo.png" alt="">
+                        <img src="../Pizza_Img/Mastercard-logo.svg.png" alt="">
+                    </div>
+                    <p><a href="#">About us</a></p>
+                    <p><a href="#">Privacy - statement</a></p>
+                </div>
+                <div class="item-center">
+                    <div class="contact">
+                        <h2 class="m-0"><a href="#"><span><i class="bi bi-telephone-fill link-success"></i></span>  1112</a></h2>
+                        <h2><a href="#">Contact us</a></h2>
+                        <h2><a href="#">Follow us</a></h2>
+                        <div class="contact-app">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-right">
+                    <a href="#"><button class="Track-your-order btn btn-light">Track your order</button></a>
+                    <p><a href="#">Now available on</a></p>
+                    <div class="app-stores">
+                        <a href="#"><img src="../Pizza_Img/logo-appstore.svg" alt=""></a>
+                        <a href="#"><img src="../Pizza_Img/logo-googleplay.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+    <script src="../Javascript/Pizza.js">
+
+    </script>
+</body>
+</html>

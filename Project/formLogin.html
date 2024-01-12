@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300&family=Hanuman:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@300&family=Updock&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300&family=Hanuman:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@300;400&family=Updock&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/Pizza.css">
+    <link rel="stylesheet" href="../Styles/pasta.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Page: Login form</title>
+</head>
+<body>
+    <!--Navegation Bar-->
+    <section class="sec-menu">
+        <div class="container-fluid shadow">
+            <div class="nav-bar">
+                <div class="logo-pizza">
+                    <a href="../Project/pizzaOfTheMonth.html"><img src="../Pizza_Img/logo-pizza.svg" alt="#" title="Logo"></a>
+                </div>
+                <div class="btn-service">
+                    <h6 class="active">Delivery <span><i class="bi bi-check text-white"></i></span></h6>
+                    <h6>Pick Up <span><i class="bi bi-check text-white"></i></span></h6>
+                </div>
+                <div class="input-address">                  
+                    <input name="input-add" type="text" placeholder="Select Store" readonly>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="language-btn">
+                    <select name="choose-lg">
+                        <option value="Khmer">Khmer</option>
+                        <option value="English">English</option>
+                    </select>
+                    <span class="btn-click">
+                        <a href="#"><button class="btn btn-warning">Login</button></a>
+                        <a href="../Project/formRegister.html"><button class="btn btn-success">Register</button></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Body-->
+    <section class="block-email">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-login">
+                        <h2>Login account</h2>
+                        <div class="wrap-register">
+                            <p>Don't have an accont ?</p>
+                            <button><a href="../Project/formRegister.html"><span><i class="bi bi-box-arrow-in-left" ></i></span> Register</a></button>
+                        </div>
+                        <form class="wrap-form">
+                            <button class="btn-fb"><a href="#">Connect with facebook</a></button>
+                            <b>OR</b>
+                            <div class="input-data">
+                                <input name="email" type="text" required>
+                                <label>Email</label>
+                                <div class="under-line"></div>
+                            </div>
+                            <div class="input-data">
+                                <input name="password" type="password" required>
+                                <label>Password</label>
+                                <div class="under-line"></div>
+                            </div>
+                            <div class="forget-pwd"><a href="#">Forget passowrd?</a></div>
+                            <div class="submit-data">
+                                <button type="submit"><a href="#">Submit <span><i class="bi bi-check-circle"></i></span></a></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="block-footer" data-aos-eseing="fade-in-out">
+        <div class="footer p-4">
+            <div class="container">
+                <div class="item-left">
+                    <div class="card-img d-flex">
+                        <img src="../Pizza_Img/VISA-logo.png" alt="">
+                        <img src="../Pizza_Img/Mastercard-logo.svg.png" alt="">
+                    </div>
+                    <p><a href="#">About us</a></p>
+                    <p><a href="#">Privacy - statement</a></p>
+                </div>
+                <div class="item-center">
+                    <div class="contact">
+                        <h2 class="m-0"><a href="#"><span><i class="bi bi-telephone-fill link-success"></i></span>  1112</a></h2>
+                        <h2><a href="#">Contact us</a></h2>
+                        <h2><a href="#">Follow us</a></h2>
+                        <div class="contact-app">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-right">
+                    <a href="#"><button class="Track-your-order btn btn-light">Track your order</button></a>
+                    <p><a href="#">Now available on</a></p>
+                    <div class="app-stores">
+                        <a href="#"><img src="../Pizza_Img/logo-appstore.svg" alt=""></a>
+                        <a href="#"><img src="../Pizza_Img/logo-googleplay.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+    <script src="../Javascript/Pizza.js">
+
+    </script>
+</body>
+</html>
